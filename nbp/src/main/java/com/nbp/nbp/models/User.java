@@ -3,28 +3,28 @@ package com.nbp.nbp.models;
 import java.sql.Date;
 
 public class User {
-	private int id;
+	private Integer id;
 	private String aboutMe;
-	private int age;
+	private Integer age;
 	private Date creationDate;
 	private String displayName;
-	private int downVotes;
+	private Integer downVotes;
 	private String emailHash;
 	private Date lastAccessDate;
 	private String location;
-	private int reputation;
-	private int upVotes;
-	private int views;
+	private Integer reputation;
+	private Integer upVotes;
+	private Integer views;
 	private String websiteUrl;
-	private int accountId;
+	private Integer accountId;
 	
 	public User() {}
 	
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 	
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	
@@ -52,19 +52,19 @@ public class User {
 		this.emailHash = emailHash;
 	}
 	
-	public int getDownVotes() {
+	public Integer getDownVotes() {
 		return downVotes;
 	}
 	
-	public void setDownVotes(int downVotes) {
+	public void setDownVotes(Integer downVotes) {
 		this.downVotes = downVotes;
 	}
 	
-	public int getAge() {
+	public Integer getAge() {
 		return age;
 	}
 	
-	public void setAge(int age) {
+	public void setAge(Integer age) {
 		this.age = age;
 	}
 	
@@ -92,27 +92,27 @@ public class User {
 		this.location = location;
 	}
 	
-	public int getReputation() {
+	public Integer getReputation() {
 		return reputation;
 	}
 	
-	public void setReputation(int reputation) {
+	public void setReputation(Integer reputation) {
 		this.reputation = reputation;
 	}
 	
-	public int getUpVotes() {
+	public Integer getUpVotes() {
 		return upVotes;
 	}
 	
-	public void setUpVotes(int upVotes) {
+	public void setUpVotes(Integer upVotes) {
 		this.upVotes = upVotes;
 	}
 	
-	public int getViews() {
+	public Integer getViews() {
 		return views;
 	}
 	
-	public void setViews(int views) {
+	public void setViews(Integer views) {
 		this.views = views;
 	}
 	
@@ -124,11 +124,11 @@ public class User {
 		this.websiteUrl = websiteUrl;
 	}
 	
-	public int getAccountId() {
+	public Integer getAccountId() {
 		return accountId;
 	}
 	
-	public void setAccountId(int accountId) {
+	public void setAccountId(Integer accountId) {
 		this.accountId = accountId;
 	}
 }
