@@ -32,7 +32,14 @@ public class PostsController {
 	
 	@GetMapping("/{id}")
 	public Post getOne(@PathVariable("id") long id) {
-		return jdbcTemplate.queryForObject("SELECT * FROM posts WHERE id=?", BeanPropertyRowMapper.newInstance(Post.class), id);
+		String sql = "SELECT count(*) FROM posts WHERE id=?";
+		int count = jdbcTemplate.queryForObject(sql, Integer.class, id);
+		if(count > 0) {
+			return jdbcTemplate.queryForObject("SELECT * FROM posts WHERE id=?", BeanPropertyRowMapper.newInstance(Post.class), id);
+		}
+		else {
+			return null;
+		}
 	}
 	
 	@PostMapping
